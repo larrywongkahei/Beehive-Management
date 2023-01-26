@@ -3,11 +3,11 @@ describe('Testing Colonies', () => {
         cy.visit('http://localhost:3000/colonies').wait(500)
     })
 
-    it('should have two colony cards by default', () => {
+    it('should have three colony cards by default', () => {
         cy.get('.colony-cards-wrapper').children().should('have.length', 3)
     })
 
-    it('should have details in two flipcard', () => {
+    it('should have details in three flipcard', () => {
         cy.get('.flip-card-back').children().should('have.length', 9)
     })
 
